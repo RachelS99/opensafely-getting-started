@@ -6,10 +6,3 @@ actions:
     outputs:
       highly_sensitive:
         dataset: output/dataset.csv.gz
-
-  generate_report:
-    run: python:v2 python analysis/report.py
-    needs: [generate_dataset]
-    outputs:
-      moderately_sensitive:
-        chart: output/report.png
